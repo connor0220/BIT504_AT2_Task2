@@ -55,12 +55,10 @@ public class GameMain extends JPanel implements MouseListener{
 		// account for statusBar height in overall height
 		setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT + 30));
 		
-		
-		// TODO: Create a new instance of the game "Board"class. HINT check the variables above for the correct name
-
-		
-		//TODO: call the method to initialise the game board
-
+		// Create a new instance of the game "Board"class
+		board = new Board();
+		// Call the method to initialise the game board
+		initGame();
 	}
 	
 	public static void main(String[] args) {
