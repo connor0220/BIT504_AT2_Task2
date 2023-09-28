@@ -23,6 +23,9 @@ public class GameMain extends JPanel implements MouseListener{
 	public static final int SYMBOL_STROKE_WIDTH = 8;
 	
 	/*declare game object variables*/
+	public enum GameState {
+	    Playing, Draw, Cross_won, Nought_won
+	}
 	// the game board 
 	private Board board;
 	 	 
